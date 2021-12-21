@@ -74,19 +74,3 @@ function timeConverter(UNIX_timestamp){
     return time;
 }
 
-
-let registerForm = new FormData(document.getElementById('register-form'));
-fetch('/register.php', {
-        method: 'POST',
-        body: registerForm
-    }
-)
-    .then(response => response.json())
-    .then((result) => {
-        if (result.errors) {
-            //вывод ошибок валидации на форму
-        } else {
-            //успешная регистрация, обновляем страницу
-        }
-    })
-    .catch(error => console.log(error));
