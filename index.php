@@ -34,7 +34,7 @@
 
 
 <header>
-    <button onclick="document.location='#main'" class="headerButton" id="mainButton">FilmReview</button>
+    <button class="headerButton" id="mainButton">FilmReview</button>
     <button onclick="document.location='#SignIn',showSignIn()" class="headerButton" id="SignInButton">Войти</button>
     <button onclick="document.location='#LogIn',showLogIn()" class="headerButton" id="LogInButton">Зарегистрироваться</button>
 </header>
