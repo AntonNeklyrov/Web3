@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background-color: #f3f3f3;
+    color: rgb(165,165,165);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+
+#SignIn{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #a51111;
+    border-radius: 10px;
+    color: #0000cc;
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 99999;
+    opacity: 1;
+    background: antiquewhite;
+    box-shadow: -4px -4px 100px 100px #7c0404;
+}
+
+.input{
+    width: 260px;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+}
+
+#checkbox{
+    color: black;
+}
+
+#LogIn{
+    width: 300px;
+    height: 610px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #a51111;
+    border-radius: 10px;
+    color: #0000cc;
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 99999;
+    opacity: 1;
+    background: antiquewhite;
+    box-shadow: -4px -4px 100px 100px #7c0404;
+}
+
+#LogIn:target{display: block;}
+#SignIn:target{display: block;}
+
+input:invalid {
+    border: 2px dashed red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+.headerButton{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 120px;
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.closeButton{
+    position: absolute;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    cursor:pointer;
+    border: 2px solid;
+    border-color: black;
+    padding: 2px;
+    background: #ccc;
+}
+
+#CloseButtonLogIn{
+    margin-left: 15px;
+}
+
+#SignInButton{
+    margin-left: 55%;
+}
+
+#LogInButton{
+    width: 200px;
+    margin-left: 15px;
+}
+
+#mainButton{
+    margin-left: 5%;
+    width: 200px;
+    font-size: 40px;
+    background: #a51111;
+    border-color: #a51111;
+    font-family: 'Fruktur', cursive;
+}
+
+.mainButton:hover{background: #ccc;}
+.closeButton:hover{background: #fff;}
+
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #a51111;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: -1px 19px 46px 0px #ca0c0c;
+}
+
+main{
+    display: inline-flex;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    flex-wrap:wrap;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.Post{
+    border-radius: 0px 0px 20px 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-bottom-color: black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 550px;
+    height: 660px;
+    float: left;
+    margin: 50px 50px 50px 70px;
+    position: center;
+}
+
+
+.PosterIMG{
+    width: 520px;
+    height: 480px;
+    position: center;
+    margin-left: 10px;
+    margin-right: 5%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.PosterLabel{
+    font-size: 40px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.PosterData{
+    font-size: 30px;
+    color: black;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.PosterButton{
+    background: #a51111;
+    position: center;
+    margin-left: 25%;
+    width: 50%;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.PosterButton:hover{background: rgba(123,0,15,1)}
+
+footer{
+    font-size: 30px;
+    margin-top:20px;
+    text-align: center;
+    width:100%;
+    background: #a51111;
+    border-color: #a51111;
+    border-radius: 5px 5px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0px -16px 18px -7px #ca0c0c;
+}
+
+
+.PersonalPost{
+    border-radius: 0px 0px 20px 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-bottom-color: black;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    height: 750px;
+    margin-left: 35%;
+    margin-top: 10px;
+    position: center;
+}
+
+.PersonalPosterIMG{
+    width: 500px;
+    height: 350px;
+    position: center;
+    margin-left: 10px;
+    margin-right: 5%;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.PersonalPosterTrailer {
+    font-size: 30px;
+    color: black;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.btn-primary{
+    margin-top:10px;
+    margin-left: -20px;
+    background: #2b73ff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    height: 50px;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.pagination a{
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0e0619;
+}
+.pagination button{
+    width: 150px;
+    background: #30ae9a;
+}
+
+.pagination{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.col-lg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
