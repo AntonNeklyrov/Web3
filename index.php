@@ -1,7 +1,3 @@
-<?php session_start();
-$_SESSION['sesia'] = 'false';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
